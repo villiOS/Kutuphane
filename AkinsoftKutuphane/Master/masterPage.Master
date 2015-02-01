@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="AkinsoftKutuphane.Master.masterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/coda-slider.css" type="text/css" />
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 2px solid #FFFFFF;
+            background-color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        
+
+
+
+
+    <div id="slider">
+
+        <div id="templatemo_sidebar">
+            <div id="templatemo_header">
+                <asp:Label ID="lblLogo" runat="server" Text="AKINSOFT KÜTÜPHANE OTOMASYONU"></asp:Label>
+                &nbsp;
+            </div>
+
+
+            <ul class="navigation">
+                <li><a href="../Pages/KitapKayit.aspx">Kitap Kayıt<span class="ui_icon home"></span></a></li>
+                <li><a href="../Pages/OgrenciKayit.aspx">Öğrenci Kayıt<span class="ui_icon aboutus"></span></a></li>
+                <li><a href="../Pages/KitapOduncTeslim.aspx">Kitap Ödünç-Teslim<span class="ui_icon services"></span></a></li>
+                <li><a href="../Pages/OgrenciListesi.aspx">Öğrenci Listesi<span class="ui_icon gallery"></span></a></li>
+                <li><a href="../Pages/KitapListesi.aspx">Kitap Listesi<span class="ui_icon contactus"></span></a></li>
+                <li><a href="../Pages/FakulteBolumKayit.aspx">Fakülte Bölüm Kayıt<span class="ui_icon services"></span></a></li>
+                <li><a href="../Pages/OduncRaporu.aspx">Ödünç Raporu<span class="ui_icon gallery"></span></a></li>
+                <li><a href="../Pages/Logout.aspx">Çıkış<span class="ui_icon contactus"></span></a></li>
+            </ul>
+        </div>
+
+        <div id="templatemo_main">
+            <div id="content">
+                <div class="scroll">
+                    <div class="scrollContainer">
+                        <div class="panel" id="home">
+
+                           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                           </asp:ContentPlaceHolder>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </form>
+
+
+
+
+    </body>
+
+
+</html>
