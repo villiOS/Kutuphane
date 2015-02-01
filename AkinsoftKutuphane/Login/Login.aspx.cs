@@ -12,7 +12,7 @@ namespace AkinsoftKutuphane
     {
         protected void Page_Load( object sender, EventArgs e )
         {
-
+            //PageLoad eventleri
         }
 
         protected void txtGiris_Click( object sender, ImageClickEventArgs e )
